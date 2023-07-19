@@ -1,0 +1,53 @@
+h1{
+    color: black;
+}
+h2{
+    font-size: x-large;
+    color: yellow;
+}
+* {
+    margin: 0;
+    padding: 02;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #333;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  section {
+    padding: 50px;
+  }
+  
+  /* Add responsive styles for different screen sizes */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+    }
+  
+    nav li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+  
