@@ -1,53 +1,115 @@
-h1{
-    color: black;
-}
-h2{
-    font-size: x-large;
-    color: yellow;
-}
-* {
+
+*{
     margin: 0;
-    padding: 02;
+    padding: 0;
     box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-  }
-  
-  header {
-    background-color: #333;
-    padding: 20px;
-  }
-  
-  nav ul {
-    list-style: none;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+nav{
     display: flex;
     justify-content: space-around;
-  }
-  
-  nav li {
-    margin-right: 20px;
-  }
-  
-  nav a {
+    align-items: center;
+    height: 40px;
+    background-color: rgb(10, 77, 10);
+    position: sticky;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center; 
+}
+
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+}
+nav ul li a{
+    color: white;
     text-decoration: none;
-    color: #fff;
-  }
-  
-  section {
-    padding: 50px;
-  }
-  
-  /* Add responsive styles for different screen sizes */
-  @media (max-width: 768px) {
-    nav ul {
-      flex-direction: column;
-    }
-  
-    nav li {
-      margin-right: 0;
-      margin-bottom: 10px;
-    }
-  }
-  
+    font-size: 20px;
+    position: relative;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+nav ul li a:hover{
+    width: 100%;
+    color: li;
+    cursor: pointer;
+    color: black;
+}
+
+.leftbar{
+    font-size: 1.5rem;
+    color: white;
+}
+
+h1{
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+.newquote{
+    width: 350px;
+    max-width: 540px;
+    margin: 10px auto 20px;
+    padding: 30px 30px 20px;
+    border-radius: 10px;
+    background-color: rgba(32, 113, 32, 0.782);
+    box-shadow: 5px 5px 5px gray;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    flex: 1;
+    border: black;
+    font-weight: 14px;
+}
+
+.row button{
+    padding: 6px 5px;
+    width: fit-content;
+    margin-top: 10px;
+    background-color: rgb(8, 48, 8);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    transition: 0.5s;
+}
+.row button:hover{
+    cursor: pointer;
+    background: rgb(17, 123, 17);
+    transform: scale(1.3);
+}
+
+#name{
+    margin-top: 5px;
+}
+
+#quote{
+    margin-top: 5px;
+}
+
+.quote{
+    margin-top: 5px;
+}
+
+.quotes ul li{
+    list-style: none;
+    font-size: 30px;
+    padding: 12px 8px 12px 400px;
+    user-select: none;
+    position: relative;
+}
